@@ -314,14 +314,24 @@ client.on("message", async message => {
 // جمــيع الحقوق محفوظة لدي "Kahrbaa"
 // ======= [ Console LOG    ] ======== //
 client.on("ready", () => {
-  console.log(`[Kahrbaa] : الحساب رقم واحد يعمل`);
-  console.log(`Hi ${client.user.tag} , This Code by : Kahrbaa `);
-  console.log(`i Have  [ " ${client.guilds.size} " ]`);
-}); // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+  let statuses = ["I Love U", "VG l KOZH4H", "BaBy", "VG | Rezho"];
+  setInterval(function() {
+    let STREAMING = statuses[Math.floor(Math.random() * statuses.length)];
+    client.user.setActivity(STREAMING, {
+      type: "STREAMING",
+      url: "https://www.twitch.tv/alhouda/video/45587399"
+    });
+  }, 2000);
+});// جمــيع الحقوق محفوظة لدي "Kahrbaa"
 client2.on("ready", () => {
-  console.log(`[Kahrbaa] : الحساب رقم اثنين يعمل `);
-  console.log(`Hi ${client2.user.tag} , This Code by : Kahrbaa `);
-  console.log(`i Have  [ " ${client2.guilds.size} " ]`); // جمــيع الحقوق محفوظة لدي "Kahrbaa"
+  let statuses = ["I Love U", "VG l KOZH4H", "BaBy", "VG | Rezho"];
+  setInterval(function() {
+    let STREAMING = statuses[Math.floor(Math.random() * statuses.length)];
+    client.user.setActivity(STREAMING, {
+      type: "STREAMING",
+      url: "https://www.twitch.tv/alhouda/video/45587399"
+    });
+  }, 2000);
 });
 client3.on("ready", () => {
   console.log(`[Kahrbaa] : الحساب رقم 3 يعمل`);
